@@ -25,6 +25,8 @@
 
 ## Simulação no Wokwi
 Acesse nossa simulação no Wokwi para visualizar o projeto em ação: 
+[https://wokwi.com/projects/381970792120545281](https://wokwi.com/projects/381970792120545281)
+
 ![Imagem do HealthGuardian no Wokwi](https://raw.githubusercontent.com/JuliaAzevedoLins/HealthGuardian-EdgeComputing/main/HealthGuardian%20-%20Imagem%20no%20Wokwi.png)
 
 ## Descrição
