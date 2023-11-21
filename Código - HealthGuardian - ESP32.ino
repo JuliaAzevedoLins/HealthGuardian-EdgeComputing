@@ -46,7 +46,7 @@ void setup() {
   tft.setCursor(0, 80);
   tft.setTextColor(ILI9341_WHITE);
   tft.setTextSize(3);
-  tft.println("Health Guardian");
+  tft.println("HealthGuardian");
 
   // Exibe a mensagem para responder às perguntas
   tft.setCursor(0, 140);
@@ -122,14 +122,78 @@ void questao_05() {
     tft.setCursor(0, 80);
     tft.setTextColor(ILI9341_WHITE);
     tft.setTextSize(3);
-    tft.println("Voce esta com");
+    tft.println("Voce esta");
 
     tft.setCursor(0, 120);
     tft.setTextColor(ILI9341_WHITE);
     tft.setTextSize(3);
-    tft.println("coriza?");
+    tft.println("com coriza?");
 }
 
+void questao_06() {
+    tft.fillScreen(ILI9341_BLACK);
+    tft.setCursor(0, 80);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("Voce tem");
+
+    tft.setCursor(0, 120);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("dor de garganta?");
+}
+
+void questao_07() {
+    tft.fillScreen(ILI9341_BLACK);
+    tft.setCursor(0, 80);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("Existe fadiga");
+
+    tft.setCursor(0, 120);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("persistente?");
+}
+
+void questao_08() {
+    tft.fillScreen(ILI9341_BLACK);
+    tft.setCursor(0, 80);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("Voce percebe uma");
+
+    tft.setCursor(0, 120);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("perda de paladar?");
+}
+
+void questao_09() {
+    tft.fillScreen(ILI9341_BLACK);
+    tft.setCursor(0, 80);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("Houve mudanca");
+
+    tft.setCursor(0, 120);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("no olfato?");
+}
+
+void questao_10() {
+    tft.fillScreen(ILI9341_BLACK);
+    tft.setCursor(0, 80);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("Voce teve");
+
+    tft.setCursor(0, 120);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(3);
+    tft.println("nausea?");
+}
 // Função para exibir mensagem final
 void Acabou() {
     tft.fillScreen(ILI9341_BLACK);
@@ -137,7 +201,7 @@ void Acabou() {
     tft.setTextColor(ILI9341_WHITE);
     tft.setTextSize(2);
     
-    if (countSim() > 3) {
+    if (countSim() > 4) {
       tft.setCursor(0, 40);
         tft.setTextColor(ILI9341_WHITE);
         tft.setTextSize(2);
@@ -155,32 +219,32 @@ void Acabou() {
 
         tft.setCursor(0, 160);
         tft.setTextColor(ILI9341_WHITE);
-        tft.setTextSize(2);
+        tft.setTextSize(3);
         tft.println("ao hospital");
 
+        delay(5000);
+        agradecimento();
+        delay(5000);
+        finalizacao();
+
     } else {
+      tft.fillScreen(ILI9341_BLACK);
         tft.setCursor(0, 80);
         tft.setTextColor(ILI9341_WHITE);
         tft.setTextSize(2);
-        tft.println("Continue realizando o");
+        tft.println("Continue realizando ");
 
         tft.setCursor(0, 120);
-        tft.setTextColor(ILI9341_WHITE);
-        tft.setTextSize(2);
-        tft.println("tratamento!");
+          tft.setTextColor(ILI9341_WHITE);
+          tft.setTextSize(3);
+          tft.println("o tratamento!");
 
         // Adiciona um pequeno delay de 3 segundos antes de exibir a mensagem final
         delay(3000);
+        agradecimento();
+        delay(5000);
+        finalizacao();
 
-        tft.setCursor(0, 80);
-        tft.setTextColor(ILI9341_WHITE);
-        tft.setTextSize(3);
-        tft.println("Obrigado por responder");
-
-        tft.setCursor(0, 120);
-        tft.setTextColor(ILI9341_WHITE);
-        tft.setTextSize(2);
-        tft.println("às perguntas! Até mais :)");
     }
 }
 
@@ -195,117 +259,117 @@ int countSim() {
   return count;
 }
 
-void loop() { 
-  if (digitalRead(BTN_PIN_01) == LOW && questao <= 5) {
+// Função de finalização
+void finalizacao() {
+  tft.fillScreen(ILI9341_BLACK);
+  tft.setCursor(0, 80);
+  tft.setTextColor(ILI9341_WHITE);
+  tft.setTextSize(3);
+  tft.println("HealthGuardian");
+
+  tft.setCursor(0, 120);
+        tft.setTextColor(ILI9341_WHITE);
+        tft.setTextSize(4);
+        tft.println("agradece :)");
+}
+
+// Função de agradecimento
+void agradecimento(){
+  tft.fillScreen(ILI9341_BLACK);
+  tft.setCursor(0, 80);
+  tft.setTextColor(ILI9341_WHITE);
+  tft.setTextSize(2);
+  tft.println("Obrigado por responder");
+
+  tft.setCursor(0, 120);
+    tft.setTextColor(ILI9341_WHITE);
+    tft.setTextSize(2);
+    tft.println("as perguntas! Ate mais :)");
+}
+
+void loop() {
+  if (questao <= 10) {
+    if (digitalRead(BTN_PIN_01) == LOW) {
+      array[questao - 1] = 1;
+    } else if (digitalRead(BTN_PIN_02) == LOW) {
+      array[questao - 1] = 0;
+    } else {
+      return;
+    }
+
     tft.fillScreen(ILI9341_BLACK);
     tft.setCursor(0, 80);
     tft.setTextColor(ILI9341_WHITE);
     tft.setTextSize(4);
-    tft.println("Sim");
-    array[questao - 1] = 1;
-    questao = questao + 1;
-    // Verifica qual é a próxima pergunta a ser exibida
-    if (questao == 2) {
-      questao_02();
-    } else if (questao == 3) {
-      questao_03();
-    } else if (questao == 4) {
-      questao_04();
-    } else if (questao == 5) {
-      questao_05();
-    } else if (questao > 5) {
-      Serial.print("Enviando....");
-      tft.fillScreen(ILI9341_BLACK);
-      tft.setCursor(0, 80);
-      tft.setTextColor(ILI9341_WHITE);
-      tft.setTextSize(3);
-      tft.println("Enviando dados...");
 
-      // Configura e envia os dados para o servidor
-      HTTPClient http;
-      String url = "https://healthguardian-e9b30-default-rtdb.firebaseio.com/DadosHealth.json";
-      http.begin(url);
-      http.addHeader("Content-Type", "application/json");
+    if (array[questao - 1] == 1) {
+      tft.setCursor(40, 80);
+      tft.println("Sim");
+    } else {
+      tft.setCursor(40, 80);
+      tft.println("Nao");
+    }
 
-      // Constrói a carga útil JSON com o ID dinâmico
-      String payload = "{\"name\":\"" + gerarID() + "\",";
-      for(int i = 0; i < 5; i++) {
-        payload += "\"value" + String(i + 1) + "\": " + String(array[i]);
-        if(i < 4) payload += ",";
+    questao++;
+    delay(500);
+
+    if (questao <= 10) {
+      switch (questao) {
+        case 2: questao_02(); break;
+        case 3: questao_03(); break;
+        case 4: questao_04(); break;
+        case 5: questao_05(); break;
+        case 6: questao_06(); break;
+        case 7: questao_07(); break;
+        case 8: questao_08(); break;
+        case 9: questao_09(); break;
+        case 10: questao_10(); break;
       }
-      payload += "}";
-      
-      // Envia a solicitação POST
-      int httpResponseCode = http.POST(payload);
-
-      if(httpResponseCode > 0) {
-        String response = http.getString();
-        Serial.println(httpResponseCode);
-        Serial.println(response);
-      } else {
-        Serial.print("Erro ao enviar a solicitação POST: ");
-        Serial.println(httpResponseCode);
-      }
-
-      http.end();
-      Acabou(); // Exibe a mensagem final
-      questao = 1; // Reseta o contador de perguntas
+    } else {
+      enviarDados();
     }
   }
-  if (digitalRead(BTN_PIN_02) == LOW && questao <= 5) {
-    tft.fillScreen(ILI9341_BLACK);
-    tft.setCursor(0, 80);
-    tft.setTextColor(ILI9341_WHITE);
-    tft.setTextSize(4);
-    tft.println("Nao");
-    array[questao - 1] = 0;
-    questao = questao + 1;
-    // Verifica qual é a próxima pergunta a ser exibida
-    if (questao == 2) {
-      questao_02();
-    } else if (questao == 3) {
-      questao_03();
-    } else if (questao == 4) {
-      questao_04();
-    } else if (questao == 5) {
-      questao_05();
-    } else if (questao > 5) {
-      Serial.print("Enviando....");
-      tft.fillScreen(ILI9341_BLACK);
-      tft.setCursor(0, 80);
-      tft.setTextColor(ILI9341_WHITE);
-      tft.setTextSize(3);
-      tft.println("Enviando dados...");
+}
+void enviarDados() {
+  tft.fillScreen(ILI9341_BLACK);
+  tft.setCursor(0, 80);
+  tft.setTextColor(ILI9341_WHITE);
+  tft.setTextSize(3);
+  tft.println("Enviando dados...");
+  Serial.print("Enviando dados para o Firebase...");
 
-      // Configura e envia os dados para o servidor
-      HTTPClient http;
-      String url = "https://healthguardian-e9b30-default-rtdb.firebaseio.com/DadosHealth.json";
-      http.begin(url);
-      http.addHeader("Content-Type", "application/json");
+  tft.setCursor(0, 120);
+  tft.setTextColor(ILI9341_WHITE);
+  tft.setTextSize(3);
+  tft.println("Aguarde :)");
 
-      // Constrói a carga útil JSON com o ID dinâmico
-      String payload = "{\"name\":\"" + gerarID() + "\",";
-      for(int i = 0; i < 5; i++) {
-        payload += "\"value" + String(i + 1) + "\": " + String(array[i]);
-        if(i < 4) payload += ",";
-      }
-      payload += "}";
-      
-      // Envia a solicitação POST
-      int httpResponseCode = http.POST(payload);
+  // Configura e envia os dados para o servidor
+  HTTPClient http;
+  String url = "https://healthguardian-e9b30-default-rtdb.firebaseio.com/DadosHealth.json";
+  http.begin(url);
+  http.addHeader("Content-Type", "application/json");
 
-      if(httpResponseCode > 0) {
-        String response = http.getString();
-        Serial.println(httpResponseCode);
-        Serial.println(response);
-      } else {
-        Serial.print("Erro ao enviar a solicitação POST: ");
-        Serial.println(httpResponseCode);
-      }
-
-      http.end();
-      Acabou(); // Exibe a mensagem final
-      questao = 1; // Reseta o contador de perguntas
-    }
+  // Constrói a carga útil JSON com o ID dinâmico
+  String payload = "{\"name\":\"" + gerarID() + "\",";
+  for (int i = 0; i < 5; i++) {
+    payload += "\"value" + String(i + 1) + "\": " + String(array[i]);
+    if (i < 4) payload += ",";
   }
+  payload += "}";
+
+  // Envia a solicitação POST
+  int httpResponseCode = http.POST(payload);
+
+  if (httpResponseCode > 0) {
+    String response = http.getString();
+    Serial.println(httpResponseCode);
+    Serial.println(response);
+  } else {
+    Serial.print("Erro ao enviar a solicitação POST: ");
+    Serial.println(httpResponseCode);
+  }
+
+  http.end();
+  Acabou(); // Exibe a mensagem final
+  questao = 1; // Reseta o contador de perguntas
 }
