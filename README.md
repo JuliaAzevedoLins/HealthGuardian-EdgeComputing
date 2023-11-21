@@ -7,8 +7,10 @@
 ###
 
 <div align="center">
-  <p align="center">Clique aqui para o nosso vídeo explicativo no Youtube</p>
-  <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
+  <p align="center">Clique aqui para o nosso vídeo explicativo no <a href="https://www.youtube.com/">Youtube</a></p>
+  <a href="https://www.youtube.com/">
+    <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
+  </a>
 </div>
 
 ###
@@ -21,8 +23,11 @@
 - Julia Azevedo Lins: RM98690
 - Luís Gustavo Barreto Garrido: RM99210
 
+### Simulação no Wokwi
+Acesse nossa [simulação no Wokwi](https://wokwi.com/projects/381970792120545281) para visualizar o projeto em ação.
+
 ## Descrição
-O Health Guardian é um sistema de monitoramento de saúde que permite aos usuários responder a perguntas sobre seus sintomas e enviar as respostas para um servidor remoto. O sistema ajuda a avaliar a condição de saúde do usuário e fornece orientações com base nas respostas.
+O Health Guardian é um sistema de monitoramento pós-hospitalar, que permite aos usuários responder a perguntas sobre seus sintomas e enviar as respostas para um servidor remoto. O sistema ajuda a avaliar a condição de saúde do usuário e fornece orientações com base nas respostas, determinando se há necessidade de retorno ao hospital.
 
 ## Funcionalidades
 - Exibe perguntas sobre sintomas em um display touchscreen.
