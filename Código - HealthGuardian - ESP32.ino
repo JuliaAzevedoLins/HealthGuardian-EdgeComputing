@@ -9,7 +9,7 @@
 #define BTN_PIN_02 12 // Pino para o segundo botão
 
 int questao = 1;
-int array[5] = {0, 0, 0, 0, 0};
+int array[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
 const char* ssid = "Wokwi-GUEST";
 const char* password = "";
@@ -251,7 +251,7 @@ void Acabou() {
 // Função para contar o número de respostas "Sim"
 int countSim() {
   int count = 0;
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 10; i++) {
     if (array[i] == 1) {
       count++;
     }
@@ -352,10 +352,10 @@ void enviarDados() {
   // Constrói a carga útil JSON com o ID dinâmico
   String payload = "{\"name\":\"" + gerarID() + "\",";
   for (int i = 0; i < 10; i++) {
-    payload += "\"value" + String(i + 1) + "\": " + String(array[i]);
+    payload += "\"questao" + String(i + 1) + "\": " + String(array[i]);
     if (i < 9) payload += ",";
-  }
-  payload += "}";
+}
+payload += "}";
 
   // Envia a solicitação POST
   int httpResponseCode = http.POST(payload);
