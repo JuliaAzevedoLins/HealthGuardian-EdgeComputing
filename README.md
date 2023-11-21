@@ -1,21 +1,19 @@
-# Health Guardian
-
-<h2 align="center">Moldando o futuro da saúde! 🩺💊</h2>
+<h1 align="center">HealthGuardian! 🩺💊</h1>
 
 ###
 
-<p align="left">Repositório dedicado ao nosso trabalho de Edge Computing da Global Solution 2023.2</p>
+<p align="center">Repositório dedicado ao nosso trabalho de Edge Computing da Global Solution 2023.2</p>
 
 ###
 
-<div align="left">
-  <p align="left">Clique aqui para o nosso vídeo explicativo no Youtube</p>
+<div align="center">
+  <p align="center">Clique aqui para o nosso vídeo explicativo no Youtube</p>
   <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
 </div>
 
 ###
 
-<div align="left">
+<div align="center">
   <img height="200" src="https://i.pinimg.com/originals/70/37/d4/7037d478852af21357f038fac2d2e9f6.gif"  />
 </div>
 
@@ -51,8 +49,3 @@ O Health Guardian é um sistema de monitoramento de saúde que permite aos usuá
 2. Responda às perguntas sobre seus sintomas pressionando os botões "Sim" ou "Não".
 3. As respostas serão enviadas para um servidor remoto.
 4. Com base nas respostas, o sistema fornecerá orientações para os usuários.
-
-## Contribuições
-Contribuições são bem-vindas! Sinta-se à vontade para propor melhorias, corrigir bugs ou adicionar novos recursos.
-
-## Autor
