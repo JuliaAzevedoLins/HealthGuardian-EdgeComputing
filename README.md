@@ -1,6 +1,6 @@
-# Health Guardian - Sistema de Monitoramento de Saúde
+# Health Guardian
 
-<h2 align="center">HealthGuardian! 🩺💊</h2>
+<h2 align="center">Moldando o futuro da saúde! 🩺💊</h2>
 
 ###
 
@@ -9,6 +9,7 @@
 ###
 
 <div align="left">
+  <p align="left">Clique aqui para o nosso vídeo explicativo no Youtube</p>
   <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
 </div>
 
