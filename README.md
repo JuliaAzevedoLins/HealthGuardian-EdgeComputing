@@ -24,7 +24,8 @@
 - Luís Gustavo Barreto Garrido: RM99210
 
 ## Simulação no Wokwi
-Acesse nossa [simulação no Wokwi](https://wokwi.com/projects/381970792120545281) para visualizar o projeto em ação.
+Acesse nossa simulação no Wokwi para visualizar o projeto em ação.
+<p <a href="[https://wokwi.com/projects/381970792120545281](https://wokwi.com/projects/381970792120545281)"</a> </p>
 
 ## Descrição
 O Health Guardian é um sistema de monitoramento pós-hospitalar, que permite aos usuários responder a perguntas sobre seus sintomas e enviar as respostas para um servidor remoto. O sistema ajuda a avaliar a condição de saúde do usuário e fornece orientações com base nas respostas, determinando se há necessidade de retorno ao hospital.
