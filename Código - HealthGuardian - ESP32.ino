@@ -351,9 +351,9 @@ void enviarDados() {
 
   // Constrói a carga útil JSON com o ID dinâmico
   String payload = "{\"name\":\"" + gerarID() + "\",";
-  for (int i = 0; i < 5; i++) {
+  for (int i = 0; i < 10; i++) {
     payload += "\"value" + String(i + 1) + "\": " + String(array[i]);
-    if (i < 4) payload += ",";
+    if (i < 9) payload += ",";
   }
   payload += "}";
 
