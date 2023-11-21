@@ -55,11 +55,11 @@ O Health Guardian é um sistema de monitoramento pós-hospitalar, que permite ao
 3. As respostas serão enviadas para um servidor remoto.
 4. Com base nas respostas, o sistema fornecerá orientações para os usuários.
 
-## Integração com o Firebase
+## Integração com o Firebase (Banco de dados)
 
 O Health Guardian utiliza o Firebase como plataforma de armazenamento remoto para as respostas dos usuários. Essa integração permite que médicos e hospitais tenham acesso remoto aos dados coletados, proporcionando uma visão abrangente da condição de saúde do usuário.
 
-## Envio de Respostas para o Firebase (Banco de dados)
+## Envio de Respostas para o Firebase
 
 Após o usuário responder às perguntas sobre seus sintomas no display, as respostas são enviadas de forma segura para o Firebase. O sistema utiliza o serviço de banco de dados em tempo real do Firebase para armazenar as informações.
 
