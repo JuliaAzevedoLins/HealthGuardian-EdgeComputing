@@ -7,7 +7,7 @@
 ###
 
 <div align="center">
-  <p align="center">Clique aqui para o nosso vídeo explicativo no <a href="https://youtu.be/tfWInelo1jo">Youtube</a></p>
+  <p align="center">Clique aqui para acessar o nosso vídeo explicativo: <a href="https://youtu.be/tfWInelo1jo">https://youtu.be/tfWInelo1jo</a></p>
   <a href="https://youtu.be/tfWInelo1jo">
     <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
   </a>
