@@ -41,21 +41,25 @@ O Health Guardian é um sistema de monitoramento pós-hospitalar, que permite ao
 - Microcontrolador ESP32
 - Display TFT Touchscreen (Adafruit ILI9341)
 - Módulo Wi-Fi para conectividade à Internet
+- Sensor de temperatura DHT22
+- Potenciômetro para simulação de pressão arterial
 
 ## Configuração do Hardware
 1. Conecte o display TFT ao ESP32 conforme as definições nos pinos (TFT_DC e TFT_CS).
 2. Conecte os botões físicos aos pinos BTN_PIN_01 e BTN_PIN_02.
-3. Alimente o ESP32 e o display.
+3. Conecte o sensor de temperatura DHT22 ao pino DHT_PIN.
+4. Conecte o potenciômetro ao pino POTENTIOMETER_PIN.
+5. Alimente o ESP32, o display, e o sensor de temperatura.
 
 ## Configuração do Software
 1. Configure as credenciais Wi-Fi (SSID e senha) no código.
-2. Certifique-se de ter as bibliotecas necessárias instaladas (WiFi, HTTPClient, Adafruit_GFX, Adafruit_ILI9341).
+2. Certifique-se de ter as bibliotecas necessárias instaladas (WiFi, HTTPClient, Adafruit_GFX, Adafruit_ILI9341, DHTesp).
 3. Carregue o código no ESP32.
 
 ## Uso
-1. O sistema exibirá uma mensagem de boas-vindas no início.
+1. O sistema exibirá uma mensagem de boas-vindas no início, seguida pela temperatura do paciente e sua pressão arterial simulada.
 2. Responda às perguntas sobre seus sintomas pressionando os botões "Sim" ou "Não".
-3. As respostas serão enviadas para um servidor remoto.
+3. As respostas, juntamente com a temperatura e pressão arterial, serão enviadas para um servidor remoto.
 4. Com base nas respostas, o sistema fornecerá orientações para os usuários.
 
 ## Integração com o Firebase (Banco de dados)
