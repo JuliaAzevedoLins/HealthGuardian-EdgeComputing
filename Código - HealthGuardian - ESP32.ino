@@ -12,7 +12,7 @@
 #define POTENTIOMETER_PIN 32
 DHTesp dht;
 
-
+// Configurando array e variaveis
 int questao = 1;
 int array[10] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 float temperatura;
@@ -23,8 +23,6 @@ const char* ssid = "Wokwi-GUEST";
 const char* password = "";
 
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC);
-
-// Função para gerar um ID único
 
 void setup() {
   Serial.begin(115200);
@@ -113,10 +111,12 @@ void setup() {
   questao_01();
 }
 
+// Função para gerar um ID único
 String gerarID() {
   return "paciente" + String(random(1000, 9999));
 }
 
+// Configurando o potenciometro
 String lerPressao() {
   // Leia o valor do potenciômetro (0-4095)
   int valorPotenciometro = analogRead(POTENTIOMETER_PIN);
@@ -130,6 +130,7 @@ String lerPressao() {
     return "baixa";
   }
 }
+
 // Função para exibir a primeira pergunta
 void questao_01() {
     tft.fillScreen(ILI9341_BLACK);
@@ -261,7 +262,8 @@ void questao_10() {
     tft.setTextSize(3);
     tft.println("nausea?");
 }
-// Função para exibir mensagem final
+
+// Função para exibir mensagem final e ver a necessidade de retorno ao hospital
 void Acabou() {
     tft.fillScreen(ILI9341_BLACK);
     tft.setCursor(0, 80);
@@ -398,6 +400,7 @@ void loop() {
     }
   }
 }
+// Enviando dados para o Firebase
 void enviarDados() {
   tft.fillScreen(ILI9341_BLACK);
   tft.setCursor(0, 80);

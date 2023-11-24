@@ -7,8 +7,8 @@
 ###
 
 <div align="center">
-  <p align="center">Clique aqui para o nosso vídeo explicativo no <a href="https://www.youtube.com/">Youtube</a></p>
-  <a href="https://www.youtube.com/">
+  <p align="center">Clique aqui para o nosso vídeo explicativo no <a href="https://youtu.be/tfWInelo1jo">Youtube</a></p>
+  <a href="https://youtu.be/tfWInelo1jo">
     <img src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge" height="40" alt="youtube logo"  />
   </a>
 </div>
@@ -83,3 +83,12 @@ Essa abordagem inovadora não apenas simplifica o monitoramento pós-hospitalar,
 
 Em resumo, o HealthGuardian simplifica o monitoramento pós-atendimento médico, proporcionando um acompanhamento contínuo e proativo. Pacientes recebem orientações precisas, e médicos têm acesso rápido a informações cruciais 😉
 
+## Acessando os dados em nosso site
+Link para o nosso site:
+[https://juliaazevedolins.github.io/healthguardian-site/ ](https://juliaazevedolins.github.io/healthguardian-site/ )
+
+- Faça seu cadastro e login e vá para a página de benefícios
+- Lá, você pode digitar o ID fornecido na simulação do Wokwi e visualizar as respostas das perguntas, assim como o médico e sua equipe faria
+- Isso tudo em tempo real!
+
+![PacienteID - Nossa página de benefícios em nosso site](./PacienteID%20-%20página%20de%20benefícios.png)
