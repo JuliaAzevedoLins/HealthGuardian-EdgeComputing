@@ -30,12 +30,14 @@ Acesse nossa simulação no Wokwi para visualizar o projeto em ação:
 ![Imagem do HealthGuardian no Wokwi](./HealthGuardian%20-%20Imagem%20no%20Wokwi.png)
 
 ## Descrição
-O Health Guardian é um sistema de monitoramento pós-hospitalar, que permite aos usuários responder a perguntas sobre seus sintomas e enviar as respostas para um servidor remoto. O sistema ajuda a avaliar a condição de saúde do usuário e fornece orientações com base nas respostas, determinando se há necessidade de retorno ao hospital.
+Pensando na falta de acompanhamento pós-hospitalar, onde pode levar a complicações sérias na saúde, apresentamos o Health Guardian! Um sistema de monitoramento pós-hospitalar, que permite aos usuários responder a perguntas sobre seus sintomas e enviar as respostas para um servidor remoto. O sistema ajuda a avaliar a condição de saúde do usuário e fornece orientações com base nas respostas, determinando se há necessidade de retorno ao hospital.
 
 ## Funcionalidades
 - Exibe perguntas sobre sintomas em um display.
 - Coleta respostas dos usuários por meio dos botões (Sim ou Não).
-- Envia os dados para um servidor remoto para avaliação.
+- Envia os dados para um servidor remoto (Firebase) para avaliação.
+- Com base nas respostas, determina há necessidade de um retorno imediato ou não ao hospital
+- Envia os dados para o nosso site para que possam ser acessados pelo médico ou equipe hospitalar, mantendo assim um monitoramento contínuo e em tempo real
 
 ## Componentes
 - Microcontrolador ESP32
@@ -61,10 +63,11 @@ O Health Guardian é um sistema de monitoramento pós-hospitalar, que permite ao
 2. Responda às perguntas sobre seus sintomas pressionando os botões "Sim" ou "Não".
 3. As respostas, juntamente com a temperatura e pressão arterial, serão enviadas para um servidor remoto.
 4. Com base nas respostas, o sistema fornecerá orientações para os usuários.
+5. Ao final, você receberá um ID. Com ele, você pode acessar o nosso site, na página de benefícios e visualizar as suas respostas (assim como irá aparecer para o médico e equipe hospitalar)
 
 ## Integração com o Firebase (Banco de dados)
 
-O Health Guardian utiliza o Firebase como plataforma de armazenamento remoto para as respostas dos usuários. Essa integração permite que médicos e hospitais tenham acesso remoto aos dados coletados, proporcionando uma visão abrangente da condição de saúde do usuário.
+O Health Guardian utiliza o Firebase como plataforma de armazenamento remoto para as respostas dos usuários. Essa integração permite que médicos e hospitais tenham acesso remoto aos dados coletados, proporcionando uma visão abrangente da condição de saúde do usuário e segurança dos dados.
 
 ## Envio de Respostas para o Firebase
 
@@ -74,6 +77,9 @@ O código no ESP32 foi configurado para construir uma carga útil JSON contendo 
 
 ## Acesso Remoto para Profissionais de Saúde
 
-Médicos e profissionais de saúde podem acessar os dados armazenados no Firebase remotamente. Isso oferece a eles a capacidade de monitorar continuamente a condição do paciente e tomar decisões informadas com base nas respostas fornecidas. O acesso remoto é essencial para fornecer orientações rápidas e eficazes, garantindo um cuidado de saúde eficiente.
+Médicos e profissionais de saúde podem acessar os dados armazenados no Firebase remotamente através do nosso site. Isso oferece a eles a capacidade de monitorar continuamente a condição do paciente e tomar decisões informadas com base nas respostas fornecidas. O acesso remoto é essencial para fornecer orientações rápidas e eficazes, garantindo um cuidado de saúde eficiente.
 
 Essa abordagem inovadora não apenas simplifica o monitoramento pós-hospitalar, mas também fornece uma solução acessível e eficaz para a avaliação remota da saúde do paciente.
+
+Em resumo, o HealthGuardian simplifica o monitoramento pós-atendimento médico, proporcionando um acompanhamento contínuo e proativo. Pacientes recebem orientações precisas, e médicos têm acesso rápido a informações cruciais 😉
+
